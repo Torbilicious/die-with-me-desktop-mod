@@ -2,14 +2,11 @@ package de.torbilicious.diewithme.mod
 
 import io.socket.client.IO
 import javafx.application.Application
-import javafx.scene.Group
-import javafx.scene.Scene
 import javafx.scene.control.ButtonType
 import javafx.scene.control.Dialog
 import javafx.scene.control.TextArea
 import javafx.scene.control.TextField
 import javafx.scene.layout.VBox
-import javafx.scene.shape.Circle
 import javafx.stage.Stage
 import org.json.JSONArray
 import org.json.JSONObject
@@ -18,13 +15,6 @@ import java.util.*
 
 class DieWithMeApp : Application() {
     override fun start(primaryStage: Stage?) {
-        val circ = Circle(40.0, 40.0, 30.0)
-        val root = Group(circ)
-        val scene = Scene(root, 400.0, 300.0)
-
-        primaryStage?.title = "My JavaFX Application"
-        primaryStage?.scene = scene
-        primaryStage?.show()
     }
 
     private val socket = IO.socket("https://api.diewithme.online")
