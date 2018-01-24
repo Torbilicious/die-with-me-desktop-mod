@@ -6,7 +6,7 @@
 
     <groupId>de.torbilicious</groupId>
     <artifactId>die-with-me-mod</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <properties>
         <kotlin.version>1.2.10</kotlin.version>
