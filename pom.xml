@@ -9,11 +9,16 @@
     <version>1.0.1-SNAPSHOT</version>
 
     <properties>
-        <kotlin.version>1.2.10</kotlin.version>
         <java.version>1.8</java.version>
-        <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <main.class>de.torbilicious.diewithme.mod.DieWithMeApp</main.class>
+
+        <kotlin.version>1.2.21</kotlin.version>
+        <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
+
+        <tornadofx.version>1.7.14</tornadofx.version>
     </properties>
 
     <dependencies>
@@ -29,6 +34,13 @@
             <groupId>io.socket</groupId>
             <artifactId>socket.io-client</artifactId>
             <version>1.0.0</version>
+        </dependency>
+
+        <!-- JavaFX with Kotlin -->
+        <dependency>
+            <groupId>no.tornado</groupId>
+            <artifactId>tornadofx</artifactId>
+            <version>${tornadofx.version}</version>
         </dependency>
 
 
@@ -91,6 +103,16 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>com.zenjava</groupId>-->
+                <!--<artifactId>javafx-maven-plugin</artifactId>-->
+                <!--<version>8.8.3</version>-->
+                <!--<configuration>-->
+                    <!--<vendor>YourCompany</vendor>-->
+                    <!--<mainClass>${main.class}</mainClass>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 
